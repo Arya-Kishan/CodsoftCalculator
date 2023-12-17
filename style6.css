@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(black 60%, aqua 40%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: black;
+    padding: 10px;
+    border: 2px solid white;
+    position: relative;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0px 0px 4px 2px aqua;
+    margin: 5px;
+
+}
+
+.input {
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    border: 2px solid black;
+    outline: none;
+    text-align: right;
+    color: aqua;
+}
+
+#name1 {
+    font-size: 35px;
+    position: absolute;
+    top: -15%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    padding: 5px;
+    color: white;
+}
+
+#name2 {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+    padding: 10px;
+    background-color: white;
+}
+
+.mainBox{
+    position: fixed;
+    bottom: 40%;
+    /* left: -25%; */
+    left: -16%;
+    display: flex;
+    transform: rotateX(180deg);
+    z-index: -1;
+}
+.box{
+    height: 50px;
+    width: 50px;
+    /* border: 2px solid white; */
+    border-bottom: 2px solid aqua;
+    border-right: 2px solid aqua;
+    border-left: 2px solid aqua;
+    position: relative;
+    background-color: aqua;
+}
+.box span{
+    color: white;
+    position: absolute;
+    bottom: -30px;
+    left: 30%;
+    transform: rotateX(180deg);
+    z-index: -1;
+}

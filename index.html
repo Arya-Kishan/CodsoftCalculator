@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="calculator">
+        <div class="input" onchange="handleInput()"><input type="text" id="input" placeholder="0">
+        </div>
+        <div class="buttons">
+            <div>
+                <button>AC</button>
+                <button>DEL</button>
+                <button>%</button>
+                <button>/</button>
+            </div>
+            <div>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>*</button>
+            </div>
+            <div>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>-</button>
+            </div>
+            <div>
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>+</button>
+            </div>
+            <div>
+                <button>00</button>
+                <button>0</button>
+                <button>.</button>
+                <button style="background-color: aqua;">=</button>
+            </div>
+        </div>
+
+        <div id="name1">
+            <h1>Calculator</h1>
+        </div>
+        <div id="name2">
+            <h5>HTML, CSS AND JAVASCRIPT</h5>
+        </div>
+
+    </section>
+
+    <section class="mainBox">
+        <div class="box" id="box1"><span>*</span></div>
+        <div class="box" id="box2"><span>0</span></div>
+        <div class="box" id="box3"><span>33</span></div>
+        <div class="box" id="box4"><span>+</span></div>
+        <div class="box" id="box5"><span>200</span></div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
